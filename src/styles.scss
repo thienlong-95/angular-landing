@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  @media screen and (max-width: 1253px) {
+    font-size: 60.5%;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+}
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  @media screen and (max-width: 769px) {
+    width: 90% !important;
+  }
+}

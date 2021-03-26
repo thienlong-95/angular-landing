@@ -1,0 +1,48 @@
+<div class="partner">
+  <div class="container flex">
+    <div class="partner__texts">
+      <h4>Our Customers</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor.
+      </p>
+    </div>
+    <div class="partner__logos">
+      <figure>
+        <img
+          src="../../../../assets/images/body/partner/partner1.png"
+          alt="Logo"
+        />
+      </figure>
+      <figure>
+        <img
+          src="../../../../assets/images/body/partner/partner2.png"
+          alt="Logo"
+        />
+      </figure>
+      <figure>
+        <img
+          src="../../../../assets/images/body/partner/partner3.png"
+          alt="Logo"
+        />
+      </figure>
+      <figure>
+        <img
+          src="../../../../assets/images/body/partner/partner4.png"
+          alt="Logo"
+        />
+      </figure>
+    </div>
+    <div class="partner__logos--mobile">
+      <ngx-slick-carousel
+        class="carousel"
+        #slickModal="slick-carousel"
+        [config]="slideConfig"
+      >
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{ slide.slide }}" alt="Logo" max-width="100%" />
+        </div>
+      </ngx-slick-carousel>
+    </div>
+  </div>
+</div>

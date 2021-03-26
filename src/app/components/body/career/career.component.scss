@@ -1,0 +1,112 @@
+.career {
+  padding-top: 26.5rem;
+  background-color: #fafafa;
+  position: relative;
+  z-index: 2;
+  clip-path: polygon(0 21.4%, 100% 0%, 100% 79%, 0 100%);
+  padding-bottom: 23.3rem;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+.container {
+  width: 80%;
+  max-width: 117rem;
+}
+
+.career__texts {
+  max-width: 68.3rem;
+  margin: 0 auto;
+  @media screen and (max-width: 1350px) {
+    max-width: 100%;
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+  }
+  &--top {
+    margin-bottom: 10.4rem;
+    h4 {
+      font-size: 3.4rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      color: #303842;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 1.4rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      color: #8191a6;
+      max-width: 84%;
+      @media screen and (max-width: 1350px) {
+        margin: 0 auto;
+      }
+      @media screen and (max-width: 981px) {
+        max-width: 70%;
+      }
+      @media screen and (max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &--bottom {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8rem 13rem;
+    justify-content: start;
+    @media screen and (max-width: 1350px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (max-width: 876px) {
+      gap: 8rem 6rem;
+    }
+    @media screen and (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &--item {
+    h5 {
+      font-family: "Roboto", sans-serif;
+      font-size: 4.4rem;
+      font-weight: 300;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #303842;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.career__img {
+  position: absolute;
+  top: 12rem;
+  right: 5rem;
+  transform: translateY(50px) !important;
+  @media screen and (max-width: 1367px) {
+    right: 0rem;
+  }
+  @media screen and (max-width: 1350px) {
+    display: none;
+  }
+}
+
+.color-green {
+  color: #32d5ba;
+}
+
+.color-blue {
+  color: #6dc4f2;
+}
+
+.color-yellow {
+  color: #ffd13c;
+}
+
+.color-red {
+  color: #f44336;
+}

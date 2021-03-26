@@ -1,0 +1,103 @@
+.container {
+  width: 80%;
+  max-width: 117rem;
+}
+
+.service {
+  position: relative;
+  margin-bottom: 14.2rem;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: -5%;
+    @media screen and (max-width: 1500px) {
+      display: none;
+    }
+  }
+  &__texts {
+    margin-left: 40%;
+    position: relative;
+    z-index: 1;
+    @media screen and (max-width: 1500px) {
+      margin-left: 0;
+    }
+
+    &--top {
+      margin-bottom: 11rem;
+      @media screen and (max-width: 1500px) {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 11rem;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 376px) {
+        max-width: 100%;
+      }
+      h4 {
+        font-family: "Roboto", sans-serif;
+        font-size: 3.4rem;
+        color: #303842;
+        font-weight: 300;
+        margin-bottom: 0.75em;
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #8191a6;
+        line-height: 1.5;
+      }
+    }
+
+    &--bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem 3rem;
+      max-width: 100%;
+
+      @media screen and (max-width: 660px) {
+        grid-template-columns: 1fr;
+        gap: 6rem;
+        justify-content: center;
+      }
+    }
+
+    &--item {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1500px) {
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__left {
+    font-size: 4rem;
+    width: 15%;
+
+    &:hover {
+      color: #4caf50;
+    }
+  }
+
+  &__right {
+    width: 70%;
+    @media screen and (max-width: 1500px) {
+      width: 70%;
+    }
+
+    h5 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #252b33;
+      margin-bottom: 1.6em;
+    }
+
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.4rem;
+      color: #8191a6;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.container {
+  width: 80%;
+  max-width: 117rem;
+}
+
+.row {
+  @media screen and (max-width: 576px) {
+    gap: 0rem;
+  }
+}
+
+.footer {
+  padding-top: 6.9rem;
+  background-color: #fafafa;
+  padding-bottom: 10rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.8rem;
+
+    h4 {
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: #303842;
+      margin-left: 0.5em;
+    }
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #8191a6;
+    max-width: 35.6rem;
+    margin-bottom: 1.8em;
+
+    @media screen and (max-width: 771px) {
+      max-width: 100%;
+    }
+  }
+
+  &__privacy {
+    margin-bottom: 2rem;
+    span {
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      &:not(:last-child) {
+        margin-right: 3.2em;
+      }
+    }
+  }
+
+  &__copyright {
+    font-weight: 400 !important;
+    @media screen and (max-width: 771px) {
+      margin-bottom: 5rem !important;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #303842;
+    margin-bottom: 2.2em;
+    @media screen and (max-width: 771px) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__lists {
+    list-style: none;
+
+    @media screen and (max-width: 771px) {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    li {
+      font-family: "Roboto", sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #8191a6;
+      margin-bottom: 1em;
+      cursor: pointer;
+      &:hover {
+        color: #303842;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__social {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8191a6;
+
+    i {
+      margin-right: 1.5em;
+    }
+  }
+}

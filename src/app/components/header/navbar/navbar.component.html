@@ -1,0 +1,95 @@
+<div class="navbar">
+  <div class="navbar__top">
+    <div class="container">
+      <div class="container__top">
+        <div class="navbar__icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-skype"></i>
+          <i class="fas fa-basketball-ball"></i>
+        </div>
+        <div class="navbar__hotline">
+          <span>Hot Line</span>
+          <span>+1 123 5444 588</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar__bottom">
+    <div class="container">
+      <div class="container__bottom">
+        <div class="navbar__logo">
+          <img src="../../../../assets/images/header/logo.png" alt="Logo" />
+          <h3>firefly</h3>
+        </div>
+        <ul class="navbar__menu">
+          <li class="active">
+            <a href="#">HOME</a>
+          </li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">TERMS</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="navbar__bottom--mobile">
+    <div class="container">
+      <div class="container__bottom">
+        <div class="navbar__logo">
+          <img src="../../../../assets/images/header/logo.png" alt="Logo" />
+          <h3>firefly</h3>
+        </div>
+
+        <a
+          class="toggle-menu"
+          href="#"
+          (click)="onOpen()"
+          [class.active1]="open"
+        >
+          <i></i>
+          <i></i>
+          <i></i>
+        </a>
+
+        <ul
+          class="navbar__menu"
+          [class]="
+            !open
+              ? 'animate__animated animate__fadeOutUp'
+              : 'animate__animated animate__fadeInDown '
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <li>
+                  <a href="#">HOME</a>
+                </li>
+              </div>
+              <div class="col-sm-4">
+                <li><a href="#">ABOUT</a></li>
+              </div>
+              <div class="col-sm-4">
+                <li><a href="#">SERVICES</a></li>
+              </div>
+              <div class="col-sm-4">
+                <li><a href="#">BLOG</a></li>
+              </div>
+              <div class="col-sm-4">
+                <li><a href="#">TERMS</a></li>
+              </div>
+              <div class="col-sm-4">
+                <li><a href="#">CONTACT US</a></li>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
